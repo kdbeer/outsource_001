@@ -1,4 +1,5 @@
-@import '../../scss/util/util';
+@import "../../scss/util/util";
+@import "../../scss/variables/variables";
 $color-gray-light-1: #ccc;
 .upload {
     position: relative;
@@ -16,7 +17,7 @@ $color-gray-light-1: #ccc;
         align-items: center;
         cursor: pointer;
     }
-    input[type='file'] {
+    input[type="file"] {
         width: 100%;
         z-index: 99;
         height: 100vh;
@@ -31,28 +32,38 @@ $color-gray-light-1: #ccc;
         font-size: 1.85rem;
         font-weight: 700;
         display: block;
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
 .display {
+
     &__content {
         background-color: #e2e2e2;
+        padding: 0.5rem 2rem;
         width: 75%;
-        padding: .5rem 2rem;
+        position: relative;
+        &__close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 10px;
+            margin-top: 5px;
+            color: $color-gray-1;
+            cursor: pointer;
+        }
     }
     &__icon {
         margin-right: 2rem;
         font-size: 2.5rem;
-        color: #afafaf;
+        color: $color-gray-1;
     }
     &__filename {
         font-size: 1.25rem;
         font-weight: 500;
     }
     &__status {
-        font-size: .9rem;
+        font-size: 0.9rem;
         font-weight: 400;
     }
-
 }
