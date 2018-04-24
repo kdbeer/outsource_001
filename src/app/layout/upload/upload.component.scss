@@ -1,0 +1,58 @@
+@import '../../scss/util/util';
+$color-gray-light-1: #ccc;
+.upload {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+    overflow: hidden;
+    &__drag_and_drop {
+        display: flex;
+        height: 300px;
+        border: 1px double $color-gray-light-1;
+        border-radius: 3px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    input[type='file'] {
+        width: 100%;
+        z-index: 99;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+    span {
+        color: gray;
+        font-size: 1.85rem;
+        font-weight: 700;
+        display: block;
+        opacity: .5;
+    }
+}
+
+.display {
+    &__content {
+        background-color: #e2e2e2;
+        width: 75%;
+        padding: .5rem 2rem;
+    }
+    &__icon {
+        margin-right: 2rem;
+        font-size: 2.5rem;
+        color: #afafaf;
+    }
+    &__filename {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    &__status {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+}

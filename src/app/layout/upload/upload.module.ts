@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { UploadRoutingModule } from './upload-routing.module';
 import { UploadComponent } from './upload.component';
+import { PageHeaderModule } from './../../shared';
+
 
 @NgModule({
   imports: [
     CommonModule,
-    UploadRoutingModule
+    UploadRoutingModule,
+    PageHeaderModule
   ],
   declarations: [UploadComponent]
 })
