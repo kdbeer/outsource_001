@@ -1,10 +1,11 @@
 @import "../../../scss/variables/variables";
 .card {
     padding: 20px;
-    max-width: 300px;
     display: flex;
     text-align: center;
-    box-shadow: $shadow-dark;
+    // box-shadow: $shadow-dark;
+    margin: 0.7rem;
+
     &__image {
         width: 50%;
         margin: 0px auto;
