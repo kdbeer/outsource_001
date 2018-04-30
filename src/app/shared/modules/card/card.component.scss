@@ -1,0 +1,29 @@
+
+@import "../../../scss/variables/variables";
+
+.card {
+    padding: 20px;
+    max-width: 300px;
+    display: flex;
+    text-align: center;
+    box-shadow: $shadow-dark;
+    cursor: pointer;
+
+    &__image {
+        width: 50%;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        font-size: 1.5rem;
+        color: $color-grey-dark-1;
+    }
+    &__description {
+        font-size: .9rem;
+        margin-bottom: 25px;
+        color: $color-grey-dark-2;
+    }
+}
