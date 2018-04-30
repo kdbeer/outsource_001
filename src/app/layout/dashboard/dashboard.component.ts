@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
-import { CardComponent } from '../../components/card/card.component';
 
 @Component({
     selector: 'app-dashboard',

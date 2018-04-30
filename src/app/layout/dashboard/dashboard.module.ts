@@ -11,6 +11,8 @@ import {
     ChatComponent
 } from "./components";
 import { StatModule } from "../../shared";
+import { CardModule } from '../../shared/modules/card/card.module';
+import { CardComponent } from '../../shared/modules/card/card.component';
 
 @NgModule({
     imports: [
@@ -18,13 +20,13 @@ import { StatModule } from "../../shared";
         NgbCarouselModule.forRoot(),
         NgbAlertModule.forRoot(),
         DashboardRoutingModule,
-        StatModule
     ],
     declarations: [
         DashboardComponent,
         TimelineComponent,
         NotificationComponent,
-        ChatComponent
+        ChatComponent,
+        CardComponent
     ]
 })
 export class DashboardModule {}
